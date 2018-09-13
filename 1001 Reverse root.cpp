@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    long long c[1024];
-    float x[1024];
+    signed long long int c[1024];
+    double x[1024];
     int a = 0;
     std::cout << std::setprecision(4);
     std::cout << std::fixed;
