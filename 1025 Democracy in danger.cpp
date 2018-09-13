@@ -5,19 +5,20 @@ using namespace std;
 
 int main()
 {
-    int c, menorpos;
+    int c, menorpos, minimo;
     int suma = 0;
-    vector<int> v;
+    vector<int> vec;
     cin >> c;
     for (int i=0; i<=(c-1); i++) {
 
-        cin >> v[i];
+        cin >> vec[i];
     }
     c = (c+1)/2;
     for (int j=0; j<=(c-1),j++){
 
-        int menorpos = min_element(v.begin(), v.end()) - v.begin();
-        suma += (min_element(v.begin(), v.end())+1)/2;
+        int menorpos = min_element(vec.begin(), vec.end()) - vec.begin();
+        minimo = min_element(vec);
+        suma += (minimo+1)/2;
         v[menorpos] = 10000;
 
     }
