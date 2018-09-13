@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     signed long long int c[1024];
-    double x[1024];
+    long double x[1024];
     int a = 0;
     std::cout << std::setprecision(4);
     std::cout << std::fixed;
